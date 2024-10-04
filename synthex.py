@@ -34,7 +34,7 @@ st.markdown("""
 
         /* Style sidebar with a darker purple */
         .sidebar .sidebar-content {
-            background-color: #A100FF;
+            background-color: #FFFFFF;
         }
 
         /* Style the submit button */
