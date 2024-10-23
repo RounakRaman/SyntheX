@@ -117,7 +117,8 @@ def user_input(user_question):
 
 # Main function to run the app
 def main():
-    st.title("💡 SyntheX - GenAI Document Analyzer")
+    st.title("💡 SyntheX - Unlocking Insights from Text & Video")
+    st.page_link("pages/synthex_MeetSnaps.py",label="SyntheX MeetSnaps",icon="🎥")
 
     # User input for question
     user_question = st.text_input(" Ask any Question from the PDF/Internal Documents: ❓")
@@ -128,6 +129,7 @@ def main():
 
     # Sidebar for PDF upload
     with st.sidebar:
+        
         st.header("📂 Upload Documents:")
         pdf_docs = st.file_uploader("Upload your PDF Files/Documents", accept_multiple_files=True)
         if st.button("Submit & Process"):
