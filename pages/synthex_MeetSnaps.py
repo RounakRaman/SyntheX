@@ -24,7 +24,7 @@ def extract_meeting_details(meeting_url):
     try:
         video_id=meeting_url.split("=")[1]
         
-        meeting_text=YouTubeTranscriptApi.get_transcript(video_id)
+        meeting_text=YouTubeTranscriptApi.get_transcript(video_id, proxies={"https": "http://localhost:8501"})
 
         notes = ""
         for i in meeting_text:
