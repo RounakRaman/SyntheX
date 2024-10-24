@@ -12,6 +12,5 @@ langchain_community
 whisper
 torch
 pydub
-io
-librosa
-openAI
+
+
